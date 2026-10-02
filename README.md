@@ -31,3 +31,11 @@ I calculated residuals, MAE, MSE, and R2 manually using NumPy. I then verified m
 ## What I Learned
 
 These projects helped me understand how Python can be used to analyze scientific data. I learned how to handle missing data, compare machine learning models, evaluate prediction errors, create graphs, and use computational tools to study chemical and biological data.
+## Chapter 9: Decision Tree Classifier
+
+In this project, I used a Decision Tree Classifier to predict whether molecules are water soluble. The model used molecular weight, hydrogen bond donors, and hydrogen bond acceptors as features.
+
+I trained the model using scikit-learn and created a visual decision tree showing how the model makes its predictions. I also tested how changing the maximum tree depth affects the model and created another model that uses only hydrogen bond donors.
+
+### What I Learned
+This project helped me understand how decision trees make predictions by splitting data based on different features. I also learned that making a tree more complex does not always make it better because deeper trees can overfit the data.
