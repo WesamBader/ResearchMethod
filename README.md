@@ -1,4 +1,4 @@
-# Research Methods Coding Portfolio
+ # Research Methods Coding Portfolio
 
 This repository contains my Python coding projects and activities from my Research Methods course. Throughout the course, I used Python to work with chemical data, analyze missing values, build machine learning models, and evaluate model predictions.
 
@@ -59,3 +59,45 @@ The program used mutation and selection to improve the phrase over multiple gene
 
 ### What I Learned
 This project helped me understand how evolutionary algorithms use mutation and selection to improve results. I also learned how these algorithms can find better solutions without knowing the correct answer at the start.
+
+# AR Antagonist Viability Database
+
+## Overview
+In this project, I used Python to clean and organize chemical data related to androgen receptor (AR) testing. I used pandas, SQLite, and Matplotlib to create a database and graphs.
+
+## What I Did
+- Analyzed 1,835 chemicals.
+- Checked for missing values and duplicates.
+- Created a searchable database.
+- Compared active and inactive chemicals.
+- Created graphs showing the results.
+
+
+## Dataset Columns
+
+1. **DTXSID:** A unique identification number assigned to each chemical by the EPA CompTox database. It helps researchers identify and track chemicals.
+2. **Preferred Name:** The name used to identify the chemical in the database.
+3. **CASRN:** A unique registry number assigned to a chemical by the Chemical Abstracts Service. It helps identify chemicals that may have multiple names.
+4. **Molecular Formula:** Shows which elements are present in a chemical and how many atoms of each element it contains.
+5. **Monoisotopic Mass:** The mass of a molecule calculated using the exact masses of its most abundant isotopes.
+6. **ToxCast Active:** The number of ToxCast assays in which the chemical was classified as active. This helps show how often the chemical produces measurable biological activity.
+7. **ToxCast Total:** The total number of ToxCast assays associated with the chemical. This includes both active and inactive results.
+8. **% ToxCast Active:** The percentage of ToxCast assays in which the chemical was active. It is calculated by dividing the number of active assays by the total number of assays and multiplying by 100.
+9. **Hit Call:** Classifies the chemical as Active or Inactive in this specific viability assay. Active means the chemical met the assay's activity criteria, while Inactive means it did not.
+10. **Continuous Hit Call:** A numerical score that provides more information about assay activity than a simple Active or Inactive classification. The exact meaning depends on the assay's scoring method.
+11. **Top:** A value estimated from the fitted concentration-response curve. It represents the upper response level predicted by the model.
+12. **Scaled Top:** The fitted Top response after adjustment using the assay's scaling method. This helps express responses on a standardized scale.
+13. **AC50:** The estimated concentration at which a chemical produces half of its fitted maximum response. Lower AC50 values can indicate greater potency, but they do not automatically mean greater toxicity.
+14. **LOGAC50:** The base-10 logarithm of the AC50 value. Using a logarithmic scale makes it easier to compare concentrations that differ by large amounts.
+## Important Note
+This dataset measures viability-related assay activity. An Active result does not automatically mean that a chemical blocks the androgen receptor or is harmful to humans.
+
+
+## Results
+- Total chemicals: 1,835
+- Active: 552
+- Inactive: 1,283
+- Duplicates: 0
+
+## What I Learned
+This project helped me understand how to clean scientific data, create a database, and use Python to analyze chemical assay results.
