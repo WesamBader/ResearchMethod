@@ -61,53 +61,109 @@ The program used mutation and selection to improve the phrase over multiple gene
 This project helped me understand how evolutionary algorithms use mutation and selection to improve results. I also learned how these algorithms can find better solutions without knowing the correct answer at the start.
 
 
-# AR Agonist Dataset
+# AR Agonist Master Database
 
-## Overview
-In this project, I used Python to organize and analyze chemical data from the EPA CompTox database. The dataset focuses on androgen receptor (AR) agonist activity, which involves chemicals that may activate the androgen receptor.
+## Project Overview
+In this project, I used Python to organize and analyze chemical data from the EPA CompTox Chemicals Dashboard. The dataset focuses on androgen receptor (AR) agonist activity.
 
-The dataset contains 1,830 chemicals and 14 columns.
+The dataset contains 1,830 chemicals and 14 columns. The goal is to identify chemical properties, examine biological activity, and create a searchable database.
 
-## Dataset Columns
+## Dataset Columns and Examples
 
-1. **DTXSID:** A unique identification number assigned to each chemical by the EPA. It helps researchers track chemicals across different datasets.
+### 1. DTXSID
+A unique identification number assigned to each chemical by the EPA.
 
-2. **Preferred Name:** The name used to identify the chemical.
+Example: `DTXSID4020119` identifies Azathioprine.
 
-3. **CASRN:** A unique chemical registry number that helps identify a chemical even if it has multiple names.
+### 2. Preferred Name
+The main name used to identify a chemical.
 
-4. **Molecular Formula:** Shows which elements are in a chemical and how many atoms of each element are present.
+Example: Azathioprine.
 
-5. **Monoisotopic Mass:** The mass of a molecule calculated using the exact masses of its most abundant isotopes.
+### 3. CASRN
+A unique chemical registry number used to identify chemicals.
 
-6. **ToxCast Active:** The number of ToxCast assays in which the chemical was classified as active.
+Example: `446-86-6` is the CASRN for Azathioprine.
 
-7. **ToxCast Total:** The total number of ToxCast assays in which the chemical was tested or evaluated.
+### 4. Molecular Formula
+Shows the elements present in a chemical and the number of atoms of each element.
 
-8. **% ToxCast Active:** The percentage of ToxCast assays where the chemical was active. This helps show how often the chemical produced measurable biological activity.
+Example: `C9H7N7O2S` contains 9 carbon atoms, 7 hydrogen atoms, 7 nitrogen atoms, 2 oxygen atoms, and 1 sulfur atom.
 
-9. **Hit Call:** Identifies whether the chemical was classified as Active or Inactive in this specific AR agonist assay.
+### 5. Monoisotopic Mass
+The exact molecular mass calculated using the most abundant isotopes of each element.
 
-10. **Continuous Hit Call:** A numerical activity score that provides more detail than the Active or Inactive classification. Its exact meaning depends on the assay's scoring method.
+Example: Azathioprine has a monoisotopic mass of approximately 277.038194 Da.
 
-11. **Top:** The upper response level estimated from the chemical's concentration-response curve.
+### 6. ToxCast Active
+The number of ToxCast assays where a chemical was classified as active.
 
-12. **Scaled Top:** The Top response after adjustment using the assay's scaling method.
+Example: Azathioprine was active in 137 assays.
 
-13. **AC50:** The estimated concentration needed to produce half of the fitted maximum response. Lower values can indicate greater potency.
+### 7. ToxCast Total
+The total number of ToxCast assays evaluated for a chemical.
 
-14. **LOGAC50:** The base-10 logarithm of AC50. This makes it easier to compare chemicals with very different concentration values.
+Example: Azathioprine had 674 evaluated assay results.
 
-## Results
-- Total chemicals: 1,830
-- Active: 87
-- Inactive: 1,743
-- Duplicate chemical IDs: 0
-- Missing molecular formulas: 53
-- Missing molecular masses: 81
+### 8. % ToxCast Active
+The percentage of evaluated assays where the chemical was classified as active.
+
+Example: Azathioprine was active in approximately 20% of its evaluated assays.
+
+### 9. Hit Call
+Indicates whether a chemical was classified as Active or Inactive in the AR agonist assay.
+
+Example: Azathioprine was classified as Inactive.
+
+### 10. Continuous Hit Call
+A numerical score describing the chemical's activity in the assay.
+
+Example: Azathioprine has a Continuous Hit Call of 0.0.
+
+### 11. Top
+The estimated upper response level from a fitted concentration-response curve.
+
+Example: Azathioprine has a Top value of approximately -0.000224.
+
+### 12. Scaled Top
+The upper response value after applying the assay's scaling method.
+
+Example: Azathioprine has a Scaled Top value of approximately 0.000010.
+
+### 13. AC50
+The estimated concentration associated with half of the fitted maximum response.
+
+Example: Azathioprine has a reported AC50 of 49.75. The concentration units should be verified using the EPA assay documentation.
+
+### 14. LOGAC50
+The base-10 logarithm of the AC50 value, used to compare chemicals with different concentration values.
+
+Example: Azathioprine has a LOGAC50 of approximately 1.697.
+
+## Dataset Results
+
+| Category | Result |
+|----------|--------|
+| Total Chemicals | 1,830 |
+| Total Columns | 14 |
+| Active Chemicals | 87 |
+| Inactive Chemicals | 1,743 |
+| Duplicate DTXSIDs | 0 |
+| Missing Molecular Formulas | 53 |
+
+## Python Libraries Used
+
+- Pandas: Importing, cleaning, and analyzing data.
+- SQLite: Creating a searchable chemical database.
+- Matplotlib: Generating graphs and visualizations.
 
 ## What I Learned
-This project helped me understand how to organize chemical data, identify missing information, and compare biological activity between chemicals. I also learned how Python can be used to create a database and analyze scientific results.
 
-## Important Note
-An Active result in this assay does not automatically prove that a chemical activates the androgen receptor in humans. Additional testing is needed to confirm biological effects.
+This project helped me understand how chemical data is organized and how biological activity is measured. I learned how to identify missing values, remove duplicate chemical records, create databases, and generate graphs using Python.
+
+## Limitations
+
+An Active result in this assay does not automatically prove that a chemical activates androgen receptors in humans. Additional testing is needed.
+
+The exact interpretation of Continuous Hit Call, Top, Scaled Top, and AC50 units depends on the assay documentation.
+
