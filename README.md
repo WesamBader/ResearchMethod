@@ -61,3 +61,20 @@ In this project, I used Python to find the best-fitting line through noisy data.
 
 ## Conclusion
 The model found a line close to the original equation. The small differences were caused by random noise. This project helped me understand how models find the best fit and reduce errors.
+
+# Chapter 12: Evolutionary Algorithms
+
+## Overview
+I used Python to evolve random letters into a complete phrase.
+
+## What I Did
+- Created random phrases.
+- Used mutation and selection.
+- Improved the phrase over generations.
+- Graphed the results.
+
+## Results
+The program reached a perfect score of 28/28.
+
+## Conclusion
+I learned how evolutionary algorithms improve results over time.
