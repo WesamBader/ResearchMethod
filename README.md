@@ -40,41 +40,22 @@ I trained the model using scikit-learn and created a visual decision tree showin
 ### What I Learned
 This project helped me understand how decision trees make predictions by splitting data based on different features. I also learned that making a tree more complex does not always make it better because deeper trees can overfit the data.
 
-# Chapter 11: Gradient Descent
 
-## Overview
-In this project, I used Python to find the best-fitting line through noisy data.
+## Chapter 11: Gradient Descent
 
-## What I Did
-- Generated data using y = 2x + 5.
-- Added random noise to the data.
-- Used linear regression to find the best-fit line.
-- Calculated Mean Squared Error (MSE).
-- Created two graphs to show the results.
+In this project, I used Python to find the best-fitting line through a set of data. I created random data using the equation y = 2x + 5 and added noise to make it more realistic.
 
-## Results
-- True slope: 2.0
-- Predicted slope: 2.0905
-- True intercept: 5.0
-- Predicted intercept: 4.7301
-- MSE: 2.2428
+I used linear regression to find the best-fit line and calculated the Mean Squared Error (MSE) to measure how accurate the predictions were. I also created graphs to show the results.
 
-## Conclusion
-The model found a line close to the original equation. The small differences were caused by random noise. This project helped me understand how models find the best fit and reduce errors.
+### What I Learned
+This project helped me understand how models find the best-fitting line and how errors are measured. I also learned how noise can affect the accuracy of predictions.
 
-# Chapter 12: Evolutionary Algorithms
 
-## Overview
-I used Python to evolve random letters into a complete phrase.
+## Chapter 12: Evolutionary Algorithms
 
-## What I Did
-- Created random phrases.
-- Used mutation and selection.
-- Improved the phrase over generations.
-- Graphed the results.
+In this project, I used Python to create an evolutionary algorithm that changes random letters into the phrase "METHINKS IT IS LIKE A WEASEL."
 
-## Results
-The program reached a perfect score of 28/28.
+The program used mutation and selection to improve the phrase over multiple generations. I also created a graph showing how the fitness score improved until it reached 28/28.
 
-## Conclusion
-I learned how evolutionary algorithms improve results over time.
+### What I Learned
+This project helped me understand how evolutionary algorithms use mutation and selection to improve results. I also learned how these algorithms can find better solutions without knowing the correct answer at the start.
