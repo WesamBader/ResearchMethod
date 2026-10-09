@@ -98,20 +98,7 @@ Increasing k generally reduces inertia because the model can create smaller grou
 
 ## What I Learned
 I learned how unsupervised machine learning identifies patterns without using predefined labels. I also learned how to normalize data, apply K-Means clustering, identify centroids, and compare different cluster numbers.
-
-## Limitations
-K-Means groups elements based on numerical similarity rather than their complete chemical properties.
-
-This dataset is small, and the atomic radius and ionization energy values should be verified against reliable references. Francium values have additional uncertainty.
-
-## Files Generated
-- periodic_trends.png
-- element_clusters_k2.png
-- cluster_results_k2.csv
-- inertia_results.csv
-- elbow_method.png
-
-Additional graphs and CSV files are created when different k values are tested.
+Did the learning through Python instead of cobbler learning 
 
 ## Chapter 11: Gradient Descent
 
