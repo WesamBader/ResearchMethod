@@ -98,7 +98,7 @@ Increasing k generally reduces inertia because the model can create smaller grou
 
 ## What I Learned
 I learned how unsupervised machine learning identifies patterns without using predefined labels. I also learned how to normalize data, apply K-Means clustering, identify centroids, and compare different cluster numbers.
-Did the learning through Python instead of cobbler learning 
+Did the learning through Pycharm instead of cobbler learning 
 
 ## Chapter 11: Gradient Descent
 
