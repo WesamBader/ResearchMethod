@@ -41,6 +41,78 @@ I trained the model using scikit-learn and created a visual decision tree showin
 This project helped me understand how decision trees make predictions by splitting data based on different features. I also learned that making a tree more complex does not always make it better because deeper trees can overfit the data.
 
 
+# Chapter 10: Element Clustering
+
+## Project Overview
+In this project, I used Python and K-Means clustering to study periodic trends in Group 1 elements, also known as alkali metals.
+
+The goal was to determine whether machine learning could identify groups of elements based on their atomic radius and first ionization energy.
+
+## Dataset
+The dataset contains six alkali metals:
+- Lithium
+- Sodium
+- Potassium
+- Rubidium
+- Cesium
+- Francium
+
+## Dataset Columns
+
+1. Element: The full name of the chemical element.
+   Example: Lithium.
+
+2. Symbol: The chemical symbol of the element.
+   Example: Li.
+
+3. Atomic_Number: The number of protons in the atom.
+   Example: Lithium has 3 protons.
+
+4. Atomic_Radius_pm: The approximate size of an atom measured in picometers.
+   Example: Lithium has an atomic radius of 152 pm.
+
+5. First_Ionization_Energy_kJ_mol: The energy required to remove the first electron from a gaseous atom.
+   Example: Lithium has a first ionization energy of 520.2 kJ/mol.
+
+## Python Libraries
+- Pandas: Organizes and reads the CSV data.
+- Matplotlib: Creates graphs and visualizations.
+- Scikit-learn: Performs K-Means clustering and feature normalization.
+
+## Methods
+1. Created a CSV containing six alkali metals.
+2. Loaded the dataset using Pandas.
+3. Created a scatter plot of atomic radius and ionization energy.
+4. Standardized the two numerical features.
+5. Applied K-Means clustering with k = 2.
+6. Displayed cluster centers as black X markers.
+7. Tested different values of k.
+8. Recorded inertia scores and created an elbow graph.
+
+## Results
+The scatter plot shows that atomic radius generally increases as first ionization energy decreases.
+
+K-Means groups elements according to their positions in the two-feature space. The clusters can help distinguish lighter and heavier alkali metals.
+
+Increasing k generally reduces inertia because the model can create smaller groups.
+
+## What I Learned
+I learned how unsupervised machine learning identifies patterns without using predefined labels. I also learned how to normalize data, apply K-Means clustering, identify centroids, and compare different cluster numbers.
+
+## Limitations
+K-Means groups elements based on numerical similarity rather than their complete chemical properties.
+
+This dataset is small, and the atomic radius and ionization energy values should be verified against reliable references. Francium values have additional uncertainty.
+
+## Files Generated
+- periodic_trends.png
+- element_clusters_k2.png
+- cluster_results_k2.csv
+- inertia_results.csv
+- elbow_method.png
+
+Additional graphs and CSV files are created when different k values are tested.
+
 ## Chapter 11: Gradient Descent
 
 In this project, I used Python to find the best-fitting line through a set of data. I created random data using the equation y = 2x + 5 and added noise to make it more realistic.
