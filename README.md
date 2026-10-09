@@ -59,11 +59,5 @@ In this project, I used Python to find the best-fitting line through noisy data.
 - Predicted intercept: 4.7301
 - MSE: 2.2428
 
-## Regression Graph
-![Regression Graph](regression_scatterplot.png)
-
-## Loss Landscape
-![Loss Landscape](loss_landscape.png)
-
 ## Conclusion
 The model found a line close to the original equation. The small differences were caused by random noise. This project helped me understand how models find the best fit and reduce errors.
