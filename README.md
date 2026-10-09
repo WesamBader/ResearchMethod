@@ -39,3 +39,31 @@ I trained the model using scikit-learn and created a visual decision tree showin
 
 ### What I Learned
 This project helped me understand how decision trees make predictions by splitting data based on different features. I also learned that making a tree more complex does not always make it better because deeper trees can overfit the data.
+
+# Chapter 11: Gradient Descent
+
+## Overview
+In this project, I used Python to find the best-fitting line through noisy data.
+
+## What I Did
+- Generated data using y = 2x + 5.
+- Added random noise to the data.
+- Used linear regression to find the best-fit line.
+- Calculated Mean Squared Error (MSE).
+- Created two graphs to show the results.
+
+## Results
+- True slope: 2.0
+- Predicted slope: 2.0905
+- True intercept: 5.0
+- Predicted intercept: 4.7301
+- MSE: 2.2428
+
+## Regression Graph
+![Regression Graph](regression_scatterplot.png)
+
+## Loss Landscape
+![Loss Landscape](loss_landscape.png)
+
+## Conclusion
+The model found a line close to the original equation. The small differences were caused by random noise. This project helped me understand how models find the best fit and reduce errors.
