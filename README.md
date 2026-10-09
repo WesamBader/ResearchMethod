@@ -60,3 +60,54 @@ The program used mutation and selection to improve the phrase over multiple gene
 ### What I Learned
 This project helped me understand how evolutionary algorithms use mutation and selection to improve results. I also learned how these algorithms can find better solutions without knowing the correct answer at the start.
 
+
+# AR Agonist Dataset
+
+## Overview
+In this project, I used Python to organize and analyze chemical data from the EPA CompTox database. The dataset focuses on androgen receptor (AR) agonist activity, which involves chemicals that may activate the androgen receptor.
+
+The dataset contains 1,830 chemicals and 14 columns.
+
+## Dataset Columns
+
+1. **DTXSID:** A unique identification number assigned to each chemical by the EPA. It helps researchers track chemicals across different datasets.
+
+2. **Preferred Name:** The name used to identify the chemical.
+
+3. **CASRN:** A unique chemical registry number that helps identify a chemical even if it has multiple names.
+
+4. **Molecular Formula:** Shows which elements are in a chemical and how many atoms of each element are present.
+
+5. **Monoisotopic Mass:** The mass of a molecule calculated using the exact masses of its most abundant isotopes.
+
+6. **ToxCast Active:** The number of ToxCast assays in which the chemical was classified as active.
+
+7. **ToxCast Total:** The total number of ToxCast assays in which the chemical was tested or evaluated.
+
+8. **% ToxCast Active:** The percentage of ToxCast assays where the chemical was active. This helps show how often the chemical produced measurable biological activity.
+
+9. **Hit Call:** Identifies whether the chemical was classified as Active or Inactive in this specific AR agonist assay.
+
+10. **Continuous Hit Call:** A numerical activity score that provides more detail than the Active or Inactive classification. Its exact meaning depends on the assay's scoring method.
+
+11. **Top:** The upper response level estimated from the chemical's concentration-response curve.
+
+12. **Scaled Top:** The Top response after adjustment using the assay's scaling method.
+
+13. **AC50:** The estimated concentration needed to produce half of the fitted maximum response. Lower values can indicate greater potency.
+
+14. **LOGAC50:** The base-10 logarithm of AC50. This makes it easier to compare chemicals with very different concentration values.
+
+## Results
+- Total chemicals: 1,830
+- Active: 87
+- Inactive: 1,743
+- Duplicate chemical IDs: 0
+- Missing molecular formulas: 53
+- Missing molecular masses: 81
+
+## What I Learned
+This project helped me understand how to organize chemical data, identify missing information, and compare biological activity between chemicals. I also learned how Python can be used to create a database and analyze scientific results.
+
+## Important Note
+An Active result in this assay does not automatically prove that a chemical activates the androgen receptor in humans. Additional testing is needed to confirm biological effects.
