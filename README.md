@@ -226,3 +226,22 @@ An Active result in this assay does not automatically prove that a chemical acti
 
 The exact interpretation of Continuous Hit Call, Top, Scaled Top, and AC50 units depends on the assay documentation.
 
+
+# Chapter 13: Artificial Neural Networks
+
+## Overview
+This project compares linear regression and neural networks to predict chemical boiling points using molecular weight.
+
+## Tools
+Python, Pandas, Matplotlib, Scikit-learn
+
+## Methods
+- Train and compare both models.
+- Measure accuracy using MAE, MSE, and R².
+- Predict butane's boiling point.
+- Test different neural network sizes.
+
+## What I Learned
+I learned how neural networks use neurons, weights, biases, and activation functions to recognize patterns. I also learned how training cycles improve predictions and why more neurons do not always mean better accuracy.
+
+
