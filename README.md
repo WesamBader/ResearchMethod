@@ -244,4 +244,22 @@ Python, Pandas, Matplotlib, Scikit-learn
 ## What I Learned
 I learned how neural networks use neurons, weights, biases, and activation functions to recognize patterns. I also learned how training cycles improve predictions and why more neurons do not always mean better accuracy.
 
+# Chapter 14: Convolutional Neural Networks
+
+## Overview
+This project explores how convolution filters detect patterns in images using Python.
+
+## Tools
+Python, NumPy, SciPy, Matplotlib
+
+## Methods
+- Create a binary image using a NumPy array.
+- Apply horizontal, vertical, and diagonal filters.
+- Generate feature maps using convolution and ReLU.
+- Visualize and compare filter results.
+
+## What I Learned
+I learned how CNNs recognize patterns by scanning small sections of an image. I also learned how filters, feature maps, and ReLU work together to detect edges and shapes.
+
+
 
