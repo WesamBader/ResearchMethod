@@ -279,5 +279,23 @@ Python, Gymnasium, NumPy, Matplotlib
 ## What I Learned
 I learned how reinforcement learning uses rewards, penalties, and trial and error to improve decisions. I also learned how Q-tables help an agent develop better strategies over time.
 
+# Chapter 16: California Housing Regression
+
+## Overview
+This project uses machine learning to predict California housing prices and compare different regression models.
+
+## Tools
+Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Tkinter
+
+## Methods
+- Train four regression models.
+- Compare accuracy using R², MAE, and MSE.
+- Create graphs to visualize housing data.
+- Identify important features affecting prices.
+- Build a GUI to predict housing prices using custom inputs.
+
+## What I Learned
+I learned how regression models predict numerical values and how accuracy differs between models. I also learned how to build a GUI that allows users to enter information and receive predictions.
+
 
 
