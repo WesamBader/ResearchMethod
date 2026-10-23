@@ -261,5 +261,23 @@ Python, NumPy, SciPy, Matplotlib
 ## What I Learned
 I learned how CNNs recognize patterns by scanning small sections of an image. I also learned how filters, feature maps, and ReLU work together to detect edges and shapes.
 
+# Chapter 15: Reinforcement Learning
+
+## Overview
+This project uses Q-learning to teach an AI agent how to navigate FrozenLake through rewards and penalties.
+
+## Tools
+Python, Gymnasium, NumPy, Matplotlib
+
+## Methods
+- Create a FrozenLake environment.
+- Train an agent using Q-learning.
+- Update Q-values using the Bellman equation.
+- Test the agent over 100 episodes.
+- Visualize learning progress and the Q-table.
+
+## What I Learned
+I learned how reinforcement learning uses rewards, penalties, and trial and error to improve decisions. I also learned how Q-tables help an agent develop better strategies over time.
+
 
 
