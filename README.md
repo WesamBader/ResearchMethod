@@ -279,23 +279,40 @@ Python, Gymnasium, NumPy, Matplotlib
 ## What I Learned
 I learned how reinforcement learning uses rewards, penalties, and trial and error to improve decisions. I also learned how Q-tables help an agent develop better strategies over time.
 
-# Chapter 16: California Housing Regression
+# California Housing Price Prediction chapter 16
 
-## Overview
-This project uses machine learning to predict California housing prices and compare different regression models.
+This project uses Python, Streamlit, and Random Forest Regression to predict historical California neighborhood housing values.
 
-## Tools
-Python, Pandas, Scikit-learn, Matplotlib, Seaborn, Tkinter
+## Features
+- Housing price predictor
+- Interactive housing charts
+- Feature importance analysis
+- 5-fold cross-validation
+- Home details input and CSV download
 
-## Methods
-- Train four regression models.
-- Compare accuracy using R², MAE, and MSE.
-- Create graphs to visualize housing data.
-- Identify important features affecting prices.
-- Build a GUI to predict housing prices using custom inputs.
+## Machine Learning
+- Model: Random Forest Regressor
+- Dataset: California Housing
+- Training/Test Split: 80/20
+- Cross-Validation: 5 folds
+- Evaluation: R² Score and Mean Absolute Error
 
-## What I Learned
-I learned how regression models predict numerical values and how accuracy differs between models. I also learned how to build a GUI that allows users to enter information and receive predictions.
+## How to Run
+
+Open the PyCharm Terminal and enter:
+
+```bash
+cd /Users/wesam/PycharmProjects/ResearchMethod
+source .venv/bin/activate
+cd CaliforniaHousing
+python -m streamlit run Housing_gui.py
+```
+
+Open http://localhost:8501 in your browser.
+
+## Limitations
+Predictions use historical neighborhood data, not current individual home prices. Bedrooms, bathrooms, and garage details are not used by the prediction model.
+
 
 
 
